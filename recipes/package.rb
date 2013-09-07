@@ -20,10 +20,10 @@
 # Install PhantomJS as a package
 #
 
-case node['platform_family']
-when 'windows'
-  include_recipe 'chocolatey'
-  chocolatey   node['phantomjs']['package_name']
-else
+# case node['platform_family']
+# when 'windows'
+#   include_recipe 'chocolatey'
+#   chocolatey   node['phantomjs']['package_name']
+# else
   package   node['phantomjs']['package_name']
-end
+# end
